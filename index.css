@@ -11,12 +11,11 @@ main {
     margin-bottom: 10px;
 }
 
-#result { 
+.center { 
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
     justify-content: center;
-    align-items: center;
     padding-top: 50px;
     text-align: center;
 }
