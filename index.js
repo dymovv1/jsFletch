@@ -22,7 +22,7 @@
 
     resultsContainer.innerHTML = '';
 
-    fetch(`http://www.omdbapi.com/?apikey=${apiKey}&s=${query}&type=${type}`)
+    fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${query}&type=${type}`)
       .then(response => response.json())
       .then(data => {
         if (data.Response === 'False') {
