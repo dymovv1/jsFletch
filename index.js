@@ -1,6 +1,6 @@
  "use strict"
  
- const apiKey = 'c5a8d846';
+ const apiKey = '5a7411ae33c02e61a10837fe90d7fe85';
   const searchInput = document.getElementById('search-input');
   const typeSelect = document.getElementById('type-select');
   const searchButton = document.getElementById('search-button');
@@ -22,7 +22,7 @@
 
     resultsContainer.innerHTML = '';
 
-    fetch(`https://www.omdbapi.com/?apikey=${apiKey}&s=${query}&type=${type}`)
+    fetch(`https://api.themoviedb.org/3/movie/550?api_key=${apiKey}&s=${query}&type=${type}`)
       .then(response => response.json())
       .then(data => {
         if (data.Response === 'False') {
